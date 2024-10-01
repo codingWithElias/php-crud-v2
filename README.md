@@ -13,7 +13,10 @@ This project is a simple CRUD (Create, Read, Update, Delete) web application bui
 - **Frontend:** HTML, CSS
 - **Backend:** PHP
 - **Database:** MySQL
-
+  
+## Full Video Tutorial
+- [Video Link](https://youtu.be/8hutAbxwk8g)
+  
 ## Setup Instructions
 1. Clone the repository.
 2. Create a MySQL database and import the `crud_db.sql` file.
