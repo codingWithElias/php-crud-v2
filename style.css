@@ -1,0 +1,170 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	min-height: 100vh;
+}
+.holder {
+	max-width:700px;
+}
+.form-holder {
+	max-width:700px;
+
+}
+/* General Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Table Header */
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 15px;
+}
+
+/* Table Body */
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Zebra Striping */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover Effect */
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+
+/* Success Alert */
+.success {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: 1px solid #4CAF50;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Error Alert */
+.error {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: 1px solid #f44336;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Common Button Style */
+.link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    background-color: #0054FF;
+
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Update Button */
+.btn-update {
+    background-color: #4CAF50; /* Green */
+}
+
+.btn-update:hover {
+    background-color: #45a049;
+}
+
+/* Delete Button */
+.btn-delete {
+    background-color: #f44336; /* Red */
+}
+
+.btn-delete:hover {
+    background-color: #e53935;
+}
+.btn-create {
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-create:hover {
+    background-color: #218838;
+}
+/* Input Field Style */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
+    border: 1px solid #28a745; /* Green border on focus */
+    outline: none;
+}
+/* Responsive Table */
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        margin-bottom: 15px;
+    }
+    td {
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
